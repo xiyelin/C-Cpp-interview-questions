@@ -118,12 +118,36 @@
 
 - malloc 必须和 free 配对使用，new 和 delete 必须配对使用；（new [] 和 delete[] 配对使用）。
 
+<br>
+<br>
+#### 6.写一个“标准”宏 MIN：
 
+	说明：使用时要注意宏的副作用，能加上括号的地方一定不能少。
+	
+```
 
+		# include <stdio.h>
 
+		# define MIN(a,b) ((a)<(b)?(a):(b))
+		
+		void main()
+		{
+			int a = 10;
+			int b = 20;
+		
+			printf("a = %d, b = %d, Min: %d \n", a, b, MIN(a, b));
+		}
+	
+		a = 10, b = 20, Min: 10
+	    请按任意键继续. . .
 
+```
 
+<br>
+<br>
+#### 7.一个指针可以是 volatile 的吗？
 
+	
 
 
 
