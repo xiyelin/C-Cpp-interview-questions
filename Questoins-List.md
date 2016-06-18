@@ -10,9 +10,22 @@
 
 #### 2.写出bool、float、int和指针变量与“零值”比较的if语句：
 
-	bool类型与零值比较：
+* bool类型与零值比较：
 
 ```c
 	
+	if(flag)
+	{
+		//do A
+	}
+	else
+	{
+		//do B
+	}
 
+```
 
+* float类型与零值比较：
+
+```c
+	
